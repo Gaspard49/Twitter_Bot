@@ -32,8 +32,9 @@ def login_twitter
   def perform
     user_input = text_to_tweet
     5.times do
-    login_twitter.update("#{twitter_rand} #{user_input} #bonjour_monde")
-      puts "You just tweet to #{twitter_rand}"
+      journalist = twitter_rand
+    login_twitter.update("#{journalist} #{user_input} #bonjour_monde")
+      puts "You just tweet to #{journalist }"
     end
   end
 
